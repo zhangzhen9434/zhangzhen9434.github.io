@@ -157,6 +157,78 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/25/Python-%E5%B9%B3%E6%96%B9%E6%A0%B9/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="zhangzhen">
+      <meta itemprop="description" content="皮一下，Hello World！">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小禛禛の主页">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/25/Python-%E5%B9%B3%E6%96%B9%E6%A0%B9/" class="post-title-link" itemprop="url">Python-平方根</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-06-25 14:01:45 / 修改时间：13:17:42" itemprop="dateCreated datePublished" datetime="2020-06-25T14:01:45+08:00">2020-06-25</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>平方根，又叫二次方根，表示为〔√￣〕，如：数学语言为：√￣16=4。语言描述为：根号下16=4。</p>
+<p>以下实例为通过用户输入一个数字，并计算这个数字的平方根：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">num = float(input(<span class="string">'请输入一个数字：'</span>))</span><br><span class="line">num_sqrt =num**<span class="number">0.5</span></span><br><span class="line">print(<span class="string">' %0.3f 的平方根为 %0.3f'</span>%(num ,num_sqrt))</span><br></pre></td></tr></table></figure>
+
+<p>执行以上代码输出结果为：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ python test.py </span><br><span class="line">请输入一个数字： <span class="number">4</span></span><br><span class="line"><span class="number">4.000</span> 的平方根为 <span class="number">2.000</span></span><br></pre></td></tr></table></figure>
+
+<p>在该实例中，我们通过用户输入一个数字，并使用指数运算符 ** 来计算该数的平方根。</p>
+<p>该程序只适用于正数。负数和复数可以使用以下的方式：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding: UTF-8 -*-</span></span><br><span class="line"> </span><br><span class="line"><span class="comment"># Filename : test.py</span></span><br><span class="line"><span class="comment"># author by : www.runoob.com</span></span><br><span class="line"> </span><br><span class="line"><span class="comment"># 计算实数和复数平方根</span></span><br><span class="line"><span class="comment"># 导入复数数学模块</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">import</span> cmath</span><br><span class="line"> </span><br><span class="line">num = int(input(<span class="string">"请输入一个数字: "</span>))</span><br><span class="line">num_sqrt = cmath.sqrt(num)</span><br><span class="line">print(<span class="string">'&#123;0&#125; 的平方根为 &#123;1:0.3f&#125;+&#123;2:0.3f&#125;j'</span>.format(num ,num_sqrt.real,num_sqrt.imag))</span><br></pre></td></tr></table></figure>
+
+<p>执行以上代码输出结果为：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ python test.py </span><br><span class="line">请输入一个数字: <span class="number">-8</span></span><br><span class="line"><span class="number">-8</span> 的平方根为 <span class="number">0.000</span>+<span class="number">2.828j</span></span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/25/Python-%E5%AD%97%E7%AC%A6%E4%B8%B2%EF%BC%881%EF%BC%89/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -587,7 +659,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
