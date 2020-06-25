@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Python字符串（1）</title>
+    <url>/2020/06/25/Python-%E5%AD%97%E7%AC%A6%E4%B8%B2%EF%BC%881%EF%BC%89/</url>
+    <content><![CDATA[<p>字符串是 Python 中最常用的数据类型。我们可以使用引号( ‘ 或 “ )来创建字符串。<br>创建字符串很简单，只要为变量分配一个值即可。例如：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var1 &#x3D; &#39;Hello World!&#39;</span><br><span class="line">var2 &#x3D; &quot;Runoob&quot;</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h3 id="Python-访问字符串中的值"><a href="#Python-访问字符串中的值" class="headerlink" title="Python 访问字符串中的值"></a>Python 访问字符串中的值</h3><p>Python 不支持单字符类型，单字符在 Python 中也是作为一个字符串使用。</p>
+<p>Python 访问子字符串，可以使用方括号来截取字符串，如下实例：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#!&#x2F;usr&#x2F;bin&#x2F;python3</span><br><span class="line"></span><br><span class="line">var1 &#x3D; &#39;Hello World!&#39;</span><br><span class="line">var2 &#x3D; &quot;Runoob&quot;</span><br><span class="line"></span><br><span class="line">print (&quot;var1[0]: &quot;, var1[0])</span><br><span class="line">print (&quot;var2[1:5]: &quot;, var2[1:5])</span><br></pre></td></tr></table></figure>
+<p>以上实例执行结果：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var1[0]:  H</span><br><span class="line">var2[1:5]:  unoo</span><br></pre></td></tr></table></figure>
+
+<p>###Python 字符串更新<br>你可以截取字符串的一部分并与其他字段拼接，如下实例：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#!&#x2F;usr&#x2F;bin&#x2F;python3</span><br><span class="line"></span><br><span class="line">var1 &#x3D; &#39;Hello World!&#39;</span><br><span class="line"></span><br><span class="line">print (&quot;已更新字符串 : &quot;, var1[:6] + &#39;Runoob!&#39;)</span><br></pre></td></tr></table></figure>
+<p>以上实例执行结果：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">已更新字符串 :  Hello Runoob!</span><br></pre></td></tr></table></figure>
+
+<p>###Python转义字符<br>在需要在字符中使用特殊字符时，python用反斜杠()转义字符。如下表：</p>
+<table>
+<thead>
+<tr>
+<th align="left">转义字符</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">短文本</td>
+<td align="left">短文本</td>
+</tr>
+<tr>
+<td align="left">\(在行尾时)</td>
+<td align="left">续行符</td>
+</tr>
+<tr>
+<td align="left">\\</td>
+<td align="left">反斜杠符号</td>
+</tr>
+<tr>
+<td align="left">&#39;</td>
+<td align="left">单引号</td>
+</tr>
+<tr>
+<td align="left">&quot;</td>
+<td align="left">双引号</td>
+</tr>
+<tr>
+<td align="left">\a</td>
+<td align="left">响铃</td>
+</tr>
+<tr>
+<td align="left">\b</td>
+<td align="left">退格(Backspace)</td>
+</tr>
+<tr>
+<td align="left">\000</td>
+<td align="left">空</td>
+</tr>
+<tr>
+<td align="left">\n</td>
+<td align="left">换行</td>
+</tr>
+<tr>
+<td align="left">\v</td>
+<td align="left">纵向制表符</td>
+</tr>
+<tr>
+<td align="left">\t</td>
+<td align="left">横向制表符</td>
+</tr>
+<tr>
+<td align="left">\r</td>
+<td align="left">回车</td>
+</tr>
+<tr>
+<td align="left">\f</td>
+<td align="left">换页</td>
+</tr>
+<tr>
+<td align="left">\oyy</td>
+<td align="left">八进制数，yy 代表的字符，例如：\o12 代表换行，其中 o 是字母，不是数字 0。</td>
+</tr>
+<tr>
+<td align="left">\xyy</td>
+<td align="left">十六进制数，yy代表的字符，例如：\x0a代表换行</td>
+</tr>
+<tr>
+<td align="left">\other</td>
+<td align="left">其它的字符以普通格式输出</td>
+</tr>
+</tbody></table>
+<p>###Python字符串运算符<br>下表实例变量a值为字符串 “Hello”，b变量值为 “Python”：</p>
+<table>
+<thead>
+<tr>
+<th align="left">操作符</th>
+<th align="left">描述</th>
+<th align="left">实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">+</td>
+<td align="left">字符串连接</td>
+<td align="left">a + b 输出结果： HelloPython</td>
+</tr>
+<tr>
+<td align="left">*</td>
+<td align="left">重复输出字符串</td>
+<td align="left">a*2 输出结果：HelloHello</td>
+</tr>
+<tr>
+<td align="left">[]</td>
+<td align="left">通过索引获取字符串中字符</td>
+<td align="left">a[1] 输出结果 e</td>
+</tr>
+<tr>
+<td align="left">[ : ]</td>
+<td align="left">截取字符串中的一部分，遵循左闭右开原则，str[0:2] 是不包含第 3 个字符的。</td>
+<td align="left">a[1:4] 输出结果 ell</td>
+</tr>
+<tr>
+<td align="left">in</td>
+<td align="left">成员运算符 - 如果字符串中包含给定的字符返回 True</td>
+<td align="left">‘H’ in a 输出结果 True</td>
+</tr>
+<tr>
+<td align="left">not in</td>
+<td align="left">成员运算符 - 如果字符串中不包含给定的字符返回 True</td>
+<td align="left">‘M’ not in a 输出结果 True</td>
+</tr>
+<tr>
+<td align="left">r/R</td>
+<td align="left">原始字符串 - 原始字符串：所有的字符串都是直接按照字面的意思来使用，没有转义特殊或不能打印的字符。 原始字符串除在字符串的第一个引号前加上字母 r（可以大小写）以外，与普通字符串有着几乎完全相同的语法。</td>
+<td align="left"><code>print( r&#39;\n&#39; )print( R&#39;\n&#39; )</code></td>
+</tr>
+<tr>
+<td align="left">%</td>
+<td align="left">格式字符串</td>
+<td align="left"></td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#!&#x2F;usr&#x2F;bin&#x2F;python3</span><br><span class="line"></span><br><span class="line">a &#x3D; &quot;Hello&quot;</span><br><span class="line">b &#x3D; &quot;Python&quot;</span><br><span class="line"></span><br><span class="line">print(&quot;a + b 输出结果：&quot;, a + b)</span><br><span class="line">print(&quot;a * 2 输出结果：&quot;, a * 2)</span><br><span class="line">print(&quot;a[1] 输出结果：&quot;, a[1])</span><br><span class="line">print(&quot;a[1:4] 输出结果：&quot;, a[1:4])</span><br><span class="line"></span><br><span class="line">if( &quot;H&quot; in a) :</span><br><span class="line">    print(&quot;H 在变量 a 中&quot;)</span><br><span class="line">else :</span><br><span class="line">    print(&quot;H 不在变量 a 中&quot;)</span><br><span class="line"></span><br><span class="line">if( &quot;M&quot; not in a) :</span><br><span class="line">    print(&quot;M 不在变量 a 中&quot;)</span><br><span class="line">else :</span><br><span class="line">    print(&quot;M 在变量 a 中&quot;)</span><br><span class="line"></span><br><span class="line">print (r&#39;\n&#39;)</span><br><span class="line">print (R&#39;\n&#39;)</span><br></pre></td></tr></table></figure>
+<p>以上实例输出结果为：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">a + b 输出结果： HelloPython</span><br><span class="line">a * 2 输出结果： HelloHello</span><br><span class="line">a[1] 输出结果： e</span><br><span class="line">a[1:4] 输出结果： ell</span><br><span class="line">H 在变量 a 中</span><br><span class="line">M 不在变量 a 中</span><br><span class="line">\n</span><br><span class="line">\n</span><br></pre></td></tr></table></figure>
+<p>###Python字符串格式化<br>Python 支持格式化字符串的输出 。尽管这样可能会用到非常复杂的表达式，但最基本的用法是将一个值插入到一个有字符串格式符 %s 的字符串中。</p>
+<p>在 Python 中，字符串格式化使用与 C 中 sprintf 函数一样的语法。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#!&#x2F;usr&#x2F;bin&#x2F;python3</span><br><span class="line"></span><br><span class="line">print (&quot;我叫 %s 今年 %d 岁!&quot; % (&#39;小明&#39;, 10))</span><br></pre></td></tr></table></figure>
+<p>以上实例输出结果：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">我叫 小明 今年 10 岁!</span><br></pre></td></tr></table></figure>
+<p>python字符串格式化符号:<br>|  符号|    描述|<br>| :——- | :—— |<br>|  %c     | 格式化字符及其ASCII码|<br>|       %s     | 格式化字符串|<br>|      %d     | 格式化整数|<br>|    %u     | 格式化无符号整型|<br>|     %o    |  格式化无符号八进制数|<br>|       %x    |  格式化无符号十六进制数|<br>|       %X    |  格式化无符号十六进制数（大写）|<br>|       %f    |  格式化浮点数字，可指定小数点后的精度|<br>|       %e    |  用科学计数法格式化浮点数|<br>|       %E    |  作用同%e，用科学计数法格式化浮点数|<br>|       %g    |  %f和%e的简写|<br>|       %G    |  %f 和 %E 的简写|<br>|       %p    |  用十六进制数格式化变量的地址|</p>
+<p>格式化操作符辅助指令:<br>|  符号|      功能|<br>|:—-  |:—-  |<br>|  *    |  定义宽度或者小数点精度|<br>|  -    |  用做左对齐|<br>|  +    |  在正数前面显示加号( + )|<br>|  <sp>|      在正数前面显示空格|<br>|  #    |  在八进制数前面显示零(‘0’)，在十六进制前面显示’0x’或者’0X’(取决于用的是’x’还是’X’)|<br>|  0    |  显示的数字前面填充’0’而不是默认的空格|<br>|  %    |  ‘%%’输出一个单一的’%’|<br>|  (var)    |  映射变量(字典参数)<br>|  m.n.    |  m 是显示的最小总宽度,n 是小数点后的位数(如果可用的话)|  </p>
+<p>Python2.6 开始，新增了一种格式化字符串的函数 str.format()，它增强了字符串格式化的功能。</p>
+<p>###Python三引号<br>python三引号允许一个字符串跨多行，字符串中可以包含换行符、制表符以及其他特殊字符。实例如下:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#!&#x2F;usr&#x2F;bin&#x2F;python3</span><br><span class="line"></span><br><span class="line">para_str &#x3D; &quot;&quot;&quot;这是一个多行字符串的实例</span><br><span class="line">多行字符串可以使用制表符</span><br><span class="line">TAB ( \t )。</span><br><span class="line">也可以使用换行符 [ \n ]。</span><br><span class="line">&quot;&quot;&quot;</span><br><span class="line">print (para_str)</span><br></pre></td></tr></table></figure>
+<p>以上实例执行结果为：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">这是一个多行字符串的实例</span><br><span class="line">多行字符串可以使用制表符</span><br><span class="line">TAB (    )。</span><br><span class="line">也可以使用换行符 [</span><br><span class="line"> ]。</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Python平方根</title>
+    <url>/2020/06/25/Python-%E5%B9%B3%E6%96%B9%E6%A0%B9/</url>
+    <content><![CDATA[<p>平方根，又叫二次方根，表示为〔√￣〕，如：数学语言为：√￣16=4。语言描述为：根号下16=4。</p>
+<p>以下实例为通过用户输入一个数字，并计算这个数字的平方根：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">num = float(input(<span class="string">'请输入一个数字：'</span>))</span><br><span class="line">num_sqrt =num**<span class="number">0.5</span></span><br><span class="line">print(<span class="string">' %0.3f 的平方根为 %0.3f'</span>%(num ,num_sqrt))</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<p>执行以上代码输出结果为：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">$ python test.py </span><br><span class="line">请输入一个数字： <span class="number">4</span></span><br><span class="line"><span class="number">4.000</span> 的平方根为 <span class="number">2.000</span></span><br></pre></td></tr></table></figure>
+
+<p>在该实例中，我们通过用户输入一个数字，并使用指数运算符 ** 来计算该数的平方根。</p>
+<p>该程序只适用于正数。负数和复数可以使用以下的方式：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># -*- coding: UTF-8 -*-</span></span><br><span class="line"> </span><br><span class="line"><span class="comment"># Filename : test.py</span></span><br><span class="line"><span class="comment"># author by : www.runoob.com</span></span><br><span class="line"> </span><br><span class="line"><span class="comment"># 计算实数和复数平方根</span></span><br><span class="line"><span class="comment"># 导入复数数学模块</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">import</span> cmath</span><br><span class="line"> </span><br><span class="line">num = int(input(<span class="string">"请输入一个数字: "</span>))</span><br><span class="line">num_sqrt = cmath.sqrt(num)</span><br><span class="line">print(<span class="string">'&#123;0&#125; 的平方根为 &#123;1:0.3f&#125;+&#123;2:0.3f&#125;j'</span>.format(num ,num_sqrt.real,num_sqrt.imag))</span><br></pre></td></tr></table></figure>
+
+<p>执行以上代码输出结果为：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">$ python test.py </span><br><span class="line">请输入一个数字: <span class="number">-8</span></span><br><span class="line"><span class="number">-8</span> 的平方根为 <span class="number">0.000</span>+<span class="number">2.828j</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Python数学求和</title>
+    <url>/2020/06/25/Python-%E6%95%B0%E5%AD%A6%E6%B1%82%E5%92%8C/</url>
+    <content><![CDATA[<p>以下实例为通过用户输入两个数字，并计算两个数字之和：</p>
+<h5 id="实例1"><a href="#实例1" class="headerlink" title="实例1"></a>实例1</h5><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># -*- coding: UTF-8 -*-  </span></span><br><span class="line"><span class="comment"># Filename : test.py </span></span><br><span class="line"><span class="comment"># author by : www.runoob.com  </span></span><br><span class="line"><span class="comment"># 用户输入数字 num1 = input('输入第一个数字：') num2 = input('输入第二个数字：')  </span></span><br><span class="line"><span class="comment"># 求和 sum = float(num1) + float(num2)  </span></span><br><span class="line"><span class="comment"># 显示计算结果 print('数字 &#123;0&#125; 和 &#123;1&#125; 相加结果为： &#123;2&#125;'.format(num1, num2, sum))</span></span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<p>执行以上代码输出结果为：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">输入第一个数字：<span class="number">1.5</span></span><br><span class="line">输入第二个数字：<span class="number">2.5</span></span><br><span class="line">数字 <span class="number">1.5</span> 和 <span class="number">2.5</span> 相加结果为： <span class="number">4.0</span></span><br></pre></td></tr></table></figure>
+
+<p>在该实例中，我们通过用户输入两个数字来求和。使用了内置函数 input() 来获取用户的输入，input() 返回一个字符串，所以我们需要使用 float() 方法将字符串转换为数字。</p>
+<p>两数字运算，求和我们使用了加号 (+)运算符，除此外，还有 减号 (-), 乘号 (*), 除号 (/), 地板除 (//) 或 取余 (%)。更多数字运算可以查看我们的Python 数字运算。</p>
+<p>我们还可以将以上运算，合并为一行代码：</p>
+<h5 id="实例2"><a href="#实例2" class="headerlink" title="实例2"></a>实例2</h5><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># -*- coding: UTF-8 -*-  </span></span><br><span class="line"><span class="comment"># Filename : test.py </span></span><br><span class="line"><span class="comment"># author by : www.runoob.com  </span></span><br><span class="line">print(<span class="string">'两数之和为 %.1f'</span> %(float(input(<span class="string">'输入第一个数字：'</span>))+float(input(<span class="string">'输入第二个数字：'</span>))))</span><br></pre></td></tr></table></figure>
+
+<p>执行以上代码输出结果为：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">$ python test.py </span><br><span class="line">输入第一个数字：<span class="number">1.5</span></span><br><span class="line">输入第二个数字：<span class="number">2.5</span></span><br><span class="line">两数之和为 <span class="number">4.0</span></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2020/06/23/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<a id="more"></a>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Hexo备份技巧</title>
+    <url>/2020/06/24/hexo%E5%8D%9A%E5%AE%A2%E5%A4%87%E4%BB%BD/</url>
+    <content><![CDATA[<p>使用Hexo在github搭建的博客，博客作为一个单独的GitHub仓库存在，但是这个仓库只有生成的静态网页文件，并没有Hexo的源文件，如果要换电脑或者重装系统后，就比较麻烦了，这里推荐一种方法。</p>
+<a id="more"></a>
+
+<h3 id="备份"><a href="#备份" class="headerlink" title="备份"></a>备份</h3><ol>
+<li>在你的仓库username.github.io中创建分支hexo；例如<a href="https://zhangzhen9434.github.io/" target="_blank" rel="noopener">zhangzhen9434.github.io</a></li>
+<li>设置hexo为默认分支；</li>
+<li>将刚刚创建的hexo分支<code>clone</code>至本地，将之前本地blog文件夹中的<code>_config.yml</code>，<code>themes/</code>，<code>source/</code>，<code>scaffolds/</code>，<code>package.json</code>，<code>.gitignore</code>复制至clone下来的username.github.io文件夹中，在username.github.io文件夹执行<code>npm install</code>和<code>npm install hexo-deployer-git</code>（这里可以看一看分支是不是显示为hexo）；</li>
+<li>将themes/next/(我用的是NexT主题)中的<code>.git/</code>删除，否则无法将主题文件夹push；</li>
+<li>在WincerChan.github.io文件夹执行<code>npm install</code>和<code>npm install hexo-deployer-git</code>（这里可以看一看分支是不是显示为hexo）；</li>
+<li>执行<code>git add .</code>、<code>git commit -m &quot;update&quot;</code>、<code>git push origin hexo</code>来提交hexo网站源文件；</li>
+<li>执行<code>hexo g -d</code>生成静态网页部署至Github上。</li>
+</ol>
+<p>这样一来，例如<a href="https://zhangzhen9434.github.io/" target="_blank" rel="noopener">zhangzhen9434.github.io</a>仓库就有master分支和hexo分支，分别保存静态网页和源文件。</p>
+<h3 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h3><p>在本地对博客修改（包括修改主题样式、发布新文章等）后：</p>
+<ol>
+<li>依次执行<code>git add .</code>、<code>git commit -m &quot;&quot;</code>、<code>git push origin hexo</code>来提交hexo网站源文件；</li>
+<li>执行<code>hexo g -d</code>生成静态网页部署至Github上。</li>
+</ol>
+<p>即重复备份的7-8步骤，以上两部没有严格的顺序。</p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>今日份休息v1.0</title>
+    <url>/2020/06/23/%E4%BB%8A%E6%97%A5%E4%BB%BD%E4%BC%91%E6%81%AFv1.0/</url>
+    <content><![CDATA[<p>今日休息，md记录一下。。。</p>
+<p><img src="https://raw.githubusercontent.com/zhangzhen9434/zhangzhen9434.github.io/master/images/github01.png" alt="image"></p>
+<a id="more"></a>
+]]></content>
+  </entry>
+</search>
